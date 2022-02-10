@@ -1,0 +1,17 @@
+rootProject.name = 'MyReactNativeApp'
+include ':react-native-bluetooth-classic'
+project(':react-native-bluetooth-classic').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bluetooth-classic/android')
+include ':react-native-safe-area-context'
+project(':react-native-safe-area-context').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-safe-area-context/android')
+include ':react-native-native-mqtt'
+project(':react-native-native-mqtt').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-native-mqtt/android')
+include ':react-native-native-mqtt'
+project(':react-native-native-mqtt').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-native-mqtt/android')
+include ':sp-react-native-mqtt'
+project(':sp-react-native-mqtt').projectDir = new File(rootProject.projectDir, '../node_modules/sp-react-native-mqtt/android')
+include ':react-native-native-mqtt'
+project(':react-native-native-mqtt').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-native-mqtt/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+
+
+include ':app'
